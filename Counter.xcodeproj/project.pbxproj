@@ -13,7 +13,47 @@
 		021125A924A22E3300B9F144 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0211259424A22E3200B9F144 /* ContentView.swift */; };
 		021125AA24A22E3300B9F144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0211259524A22E3300B9F144 /* Assets.xcassets */; };
 		021125AB24A22E3300B9F144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0211259524A22E3300B9F144 /* Assets.xcassets */; };
+		02441C6424A232F800C9C961 /* DecrementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02441C6324A232F800C9C961 /* DecrementButton.swift */; };
+		02441C6524A232F800C9C961 /* DecrementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02441C6324A232F800C9C961 /* DecrementButton.swift */; };
+		02441C6724A233AA00C9C961 /* IncrementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02441C6624A233AA00C9C961 /* IncrementButton.swift */; };
+		02441C6824A233AA00C9C961 /* IncrementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02441C6624A233AA00C9C961 /* IncrementButton.swift */; };
+		02441C8C24A236EF00C9C961 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02441C6F24A2350900C9C961 /* WidgetKit.framework */; };
+		02441C8D24A236EF00C9C961 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02441C7124A2350900C9C961 /* SwiftUI.framework */; };
+		02441C9224A236EF00C9C961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02441C9124A236EF00C9C961 /* Assets.xcassets */; };
+		02441C9624A236EF00C9C961 /* iOS WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 02441C8B24A236EF00C9C961 /* iOS WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		02441C9B24A2371200C9C961 /* iOS_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02441C9A24A2371200C9C961 /* iOS_Widget.swift */; };
+		02441CA124A237FC00C9C961 /* CurrentCountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAF32D24A2323100221975 /* CurrentCountLabel.swift */; };
+		02EAF32B24A22EE400221975 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAF32A24A22EE400221975 /* CounterView.swift */; };
+		02EAF32C24A22EE400221975 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAF32A24A22EE400221975 /* CounterView.swift */; };
+		02EAF32E24A2323100221975 /* CurrentCountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAF32D24A2323100221975 /* CurrentCountLabel.swift */; };
+		02EAF32F24A2323100221975 /* CurrentCountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAF32D24A2323100221975 /* CurrentCountLabel.swift */; };
+		02EAF33124A2328700221975 /* NegativeNumberToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAF33024A2328700221975 /* NegativeNumberToggle.swift */; };
+		02EAF33224A2328700221975 /* NegativeNumberToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAF33024A2328700221975 /* NegativeNumberToggle.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02441C9424A236EF00C9C961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0211258E24A22E3200B9F144 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02441C8A24A236EF00C9C961;
+			remoteInfo = "iOS WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		02441C8224A2350B00C9C961 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				02441C9624A236EF00C9C961 /* iOS WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0211259324A22E3200B9F144 /* CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterApp.swift; sourceTree = "<group>"; };
@@ -24,6 +64,19 @@
 		021125A224A22E3300B9F144 /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		021125A424A22E3300B9F144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		021125A524A22E3300B9F144 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		02441C6324A232F800C9C961 /* DecrementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecrementButton.swift; sourceTree = "<group>"; };
+		02441C6624A233AA00C9C961 /* IncrementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementButton.swift; sourceTree = "<group>"; };
+		02441C6F24A2350900C9C961 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		02441C7124A2350900C9C961 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		02441C8B24A236EF00C9C961 /* iOS WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iOS WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02441C9124A236EF00C9C961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02441C9324A236EF00C9C961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02441C9A24A2371200C9C961 /* iOS_Widget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOS_Widget.swift; sourceTree = "<group>"; };
+		02441CA224A23D5D00C9C961 /* Counter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Counter.entitlements; sourceTree = "<group>"; };
+		02441CA324A23DAF00C9C961 /* iOS WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS WidgetExtension.entitlements"; sourceTree = "<group>"; };
+		02EAF32A24A22EE400221975 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		02EAF32D24A2323100221975 /* CurrentCountLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCountLabel.swift; sourceTree = "<group>"; };
+		02EAF33024A2328700221975 /* NegativeNumberToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeNumberToggle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,15 +94,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02441C8824A236EF00C9C961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02441C8D24A236EF00C9C961 /* SwiftUI.framework in Frameworks */,
+				02441C8C24A236EF00C9C961 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0211258D24A22E3200B9F144 = {
 			isa = PBXGroup;
 			children = (
+				02441CA324A23DAF00C9C961 /* iOS WidgetExtension.entitlements */,
 				0211259224A22E3200B9F144 /* Shared */,
 				0211259C24A22E3300B9F144 /* iOS */,
 				021125A324A22E3300B9F144 /* macOS */,
+				02441C8E24A236EF00C9C961 /* iOS Widget */,
+				02441C6E24A2350900C9C961 /* Frameworks */,
 				0211259B24A22E3300B9F144 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,7 +124,13 @@
 			children = (
 				0211259324A22E3200B9F144 /* CounterApp.swift */,
 				0211259424A22E3200B9F144 /* ContentView.swift */,
+				02EAF32A24A22EE400221975 /* CounterView.swift */,
 				0211259524A22E3300B9F144 /* Assets.xcassets */,
+				02EAF32D24A2323100221975 /* CurrentCountLabel.swift */,
+				02EAF33024A2328700221975 /* NegativeNumberToggle.swift */,
+				02441C6324A232F800C9C961 /* DecrementButton.swift */,
+				02441C6624A233AA00C9C961 /* IncrementButton.swift */,
+				02441CA024A2377500C9C961 /* Views */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -69,6 +140,7 @@
 			children = (
 				0211259A24A22E3300B9F144 /* Counter.app */,
 				021125A224A22E3300B9F144 /* Counter.app */,
+				02441C8B24A236EF00C9C961 /* iOS WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +148,7 @@
 		0211259C24A22E3300B9F144 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				02441CA224A23D5D00C9C961 /* Counter.entitlements */,
 				0211259D24A22E3300B9F144 /* Info.plist */,
 			);
 			path = iOS;
@@ -90,6 +163,32 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		02441C6E24A2350900C9C961 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02441C6F24A2350900C9C961 /* WidgetKit.framework */,
+				02441C7124A2350900C9C961 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02441C8E24A236EF00C9C961 /* iOS Widget */ = {
+			isa = PBXGroup;
+			children = (
+				02441C9A24A2371200C9C961 /* iOS_Widget.swift */,
+				02441C9124A236EF00C9C961 /* Assets.xcassets */,
+				02441C9324A236EF00C9C961 /* Info.plist */,
+			);
+			path = "iOS Widget";
+			sourceTree = "<group>";
+		};
+		02441CA024A2377500C9C961 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,10 +199,12 @@
 				0211259624A22E3300B9F144 /* Sources */,
 				0211259724A22E3300B9F144 /* Frameworks */,
 				0211259824A22E3300B9F144 /* Resources */,
+				02441C8224A2350B00C9C961 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				02441C9524A236EF00C9C961 /* PBXTargetDependency */,
 			);
 			name = iOS;
 			productName = iOS;
@@ -127,6 +228,23 @@
 			productReference = 021125A224A22E3300B9F144 /* Counter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		02441C8A24A236EF00C9C961 /* iOS WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02441C9724A236EF00C9C961 /* Build configuration list for PBXNativeTarget "iOS WidgetExtension" */;
+			buildPhases = (
+				02441C8724A236EF00C9C961 /* Sources */,
+				02441C8824A236EF00C9C961 /* Frameworks */,
+				02441C8924A236EF00C9C961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS WidgetExtension";
+			productName = "iOS WidgetExtension";
+			productReference = 02441C8B24A236EF00C9C961 /* iOS WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -140,6 +258,9 @@
 						CreatedOnToolsVersion = 12.0;
 					};
 					021125A124A22E3300B9F144 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					02441C8A24A236EF00C9C961 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -159,6 +280,7 @@
 			targets = (
 				0211259924A22E3300B9F144 /* iOS */,
 				021125A124A22E3300B9F144 /* macOS */,
+				02441C8A24A236EF00C9C961 /* iOS WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -180,6 +302,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02441C8924A236EF00C9C961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02441C9224A236EF00C9C961 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -189,6 +319,11 @@
 			files = (
 				021125A824A22E3300B9F144 /* ContentView.swift in Sources */,
 				021125A624A22E3300B9F144 /* CounterApp.swift in Sources */,
+				02441C6724A233AA00C9C961 /* IncrementButton.swift in Sources */,
+				02EAF32E24A2323100221975 /* CurrentCountLabel.swift in Sources */,
+				02EAF32B24A22EE400221975 /* CounterView.swift in Sources */,
+				02EAF33124A2328700221975 /* NegativeNumberToggle.swift in Sources */,
+				02441C6424A232F800C9C961 /* DecrementButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,10 +333,32 @@
 			files = (
 				021125A924A22E3300B9F144 /* ContentView.swift in Sources */,
 				021125A724A22E3300B9F144 /* CounterApp.swift in Sources */,
+				02441C6824A233AA00C9C961 /* IncrementButton.swift in Sources */,
+				02EAF32F24A2323100221975 /* CurrentCountLabel.swift in Sources */,
+				02EAF32C24A22EE400221975 /* CounterView.swift in Sources */,
+				02EAF33224A2328700221975 /* NegativeNumberToggle.swift in Sources */,
+				02441C6524A232F800C9C961 /* DecrementButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02441C8724A236EF00C9C961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02441CA124A237FC00C9C961 /* CurrentCountLabel.swift in Sources */,
+				02441C9B24A2371200C9C961 /* iOS_Widget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02441C9524A236EF00C9C961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02441C8A24A236EF00C9C961 /* iOS WidgetExtension */;
+			targetProxy = 02441C9424A236EF00C9C961 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		021125AC24A22E3300B9F144 /* Debug */ = {
@@ -318,8 +475,10 @@
 		021125AF24A22E3300B9F144 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOS/Counter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24MP8L55BY;
 				ENABLE_PREVIEWS = YES;
@@ -340,8 +499,10 @@
 		021125B024A22E3300B9F144 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iOS/Counter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24MP8L55BY;
 				ENABLE_PREVIEWS = YES;
@@ -408,6 +569,55 @@
 			};
 			name = Release;
 		};
+		02441C9824A236EF00C9C961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "iOS WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24MP8L55BY;
+				INFOPLIST_FILE = "iOS Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.bonney.Counter.iOS-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02441C9924A236EF00C9C961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "iOS WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24MP8L55BY;
+				INFOPLIST_FILE = "iOS Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.bonney.Counter.iOS-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -434,6 +644,15 @@
 			buildConfigurations = (
 				021125B224A22E3300B9F144 /* Debug */,
 				021125B324A22E3300B9F144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02441C9724A236EF00C9C961 /* Build configuration list for PBXNativeTarget "iOS WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02441C9824A236EF00C9C961 /* Debug */,
+				02441C9924A236EF00C9C961 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
