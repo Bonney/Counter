@@ -38,7 +38,7 @@ struct SimpleEntry: TimelineEntry {
 
 struct PlaceholderView : View {
     var body: some View {
-        Text("Placeholder View")
+        CountText()
     }
 }
 
@@ -46,8 +46,7 @@ struct iOS_WidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-//        Text(entry.date, style: .time).font(.caption)
-        CurrentCountLabel()
+        CountText()
     }
 }
 
