@@ -7,17 +7,35 @@
 		<key>iOS WidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<key>macOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0211259924A22E3300B9F144</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>021125A124A22E3300B9F144</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>02441C8A24A236EF00C9C961</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
