@@ -9,19 +9,18 @@ import SwiftUI
 import CounterCore
 
 public struct CurrentCount: View {
-    @EnvironmentObject private var counter: Counter
+    @AppStorage("count", store: UserDefaults(suiteName: "group.io.bonney.counter")) public var count = 0
 
     public init() {
     }
 
     public var body: some View {
-        Text(counter.count, format: .number)
+        Text(count, format: .number)
     }
 }
 
 struct CurrentCount_Previews: PreviewProvider {
     static var previews: some View {
         CurrentCount()
-            .environmentObject(Counter())
     }
 }

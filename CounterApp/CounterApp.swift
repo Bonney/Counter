@@ -10,7 +10,7 @@ import CounterCore
 
 @main
 struct CounterApp: App {
-    @StateObject private var counter = Counter(initialCount: 0)
+    @StateObject private var counter = Counter()
 
     var body: some Scene {
         WindowGroup {

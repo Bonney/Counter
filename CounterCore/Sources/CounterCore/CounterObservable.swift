@@ -6,30 +6,36 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 public class Counter: ObservableObject {
     @AppStorage("count", store: UserDefaults(suiteName: "group.io.bonney.counter")) public var count = 0
 
-    private var initialCount: Int = 0
-
-    public init(initialCount: Int = 0) {
-        self.initialCount = initialCount
-        self.count = initialCount
+    public init() {
     }
 
     public func increment(by x: Int = 1) {
         count += x
+        countDidChange()
     }
 
     public func decrement(by x: Int = 1) {
         count -= x
+        countDidChange()
     }
 
     public func reset() {
-        count = initialCount
+        count = 0
+        countDidChange()
     }
 
     public func set(to x: Int) {
         count = x
+        countDidChange()
+    }
+
+    private func countDidChange() {
+        WidgetCenter.shared.reloadAllTimelines()
+        print("Reloading WidgetCenter timelines")
     }
 }

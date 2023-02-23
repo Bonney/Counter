@@ -11,8 +11,26 @@
 		021125AA24A22E3300B9F144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0211259524A22E3300B9F144 /* Assets.xcassets */; };
 		02A299D729A6B91400BB5621 /* CounterCore in Frameworks */ = {isa = PBXBuildFile; productRef = 02A299D629A6B91400BB5621 /* CounterCore */; };
 		02A299D929A6B91400BB5621 /* CounterUI in Frameworks */ = {isa = PBXBuildFile; productRef = 02A299D829A6B91400BB5621 /* CounterUI */; };
+		02A299DF29A6C3B400BB5621 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02441C6F24A2350900C9C961 /* WidgetKit.framework */; };
+		02A299E029A6C3B400BB5621 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02441C7124A2350900C9C961 /* SwiftUI.framework */; };
+		02A299E329A6C3B500BB5621 /* CounterWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A299E229A6C3B500BB5621 /* CounterWidgetBundle.swift */; };
+		02A299E529A6C3B500BB5621 /* CounterWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A299E429A6C3B500BB5621 /* CounterWidgetLiveActivity.swift */; };
+		02A299E729A6C3B500BB5621 /* CounterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A299E629A6C3B500BB5621 /* CounterWidget.swift */; };
+		02A299E929A6C3B600BB5621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A299E829A6C3B600BB5621 /* Assets.xcassets */; };
+		02A299ED29A6C3B600BB5621 /* CounterWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 02A299DE29A6C3B400BB5621 /* CounterWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		02A299F329A6C3DE00BB5621 /* CounterUI in Frameworks */ = {isa = PBXBuildFile; productRef = 02A299F229A6C3DE00BB5621 /* CounterUI */; };
 		02EAF32B24A22EE400221975 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EAF32A24A22EE400221975 /* CounterView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02A299EB29A6C3B600BB5621 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0211258E24A22E3200B9F144 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02A299DD29A6C3B400BB5621;
+			remoteInfo = CounterWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		02441C8224A2350B00C9C961 /* Embed Foundation Extensions */ = {
@@ -21,6 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				02A299ED29A6C3B600BB5621 /* CounterWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,6 +56,13 @@
 		02441CA224A23D5D00C9C961 /* Counter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Counter.entitlements; sourceTree = "<group>"; };
 		02A299D329A6B48700BB5621 /* CounterCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CounterCore; sourceTree = "<group>"; };
 		02A299D529A6B5CD00BB5621 /* CounterUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CounterUI; sourceTree = "<group>"; };
+		02A299DE29A6C3B400BB5621 /* CounterWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CounterWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		02A299E229A6C3B500BB5621 /* CounterWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterWidgetBundle.swift; sourceTree = "<group>"; };
+		02A299E429A6C3B500BB5621 /* CounterWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		02A299E629A6C3B500BB5621 /* CounterWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterWidget.swift; sourceTree = "<group>"; };
+		02A299E829A6C3B600BB5621 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02A299EA29A6C3B600BB5621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02A299EE29A6C3B600BB5621 /* CounterWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CounterWidgetExtension.entitlements; sourceTree = "<group>"; };
 		02EAF32A24A22EE400221975 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,34 +76,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02A299DB29A6C3B400BB5621 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A299E029A6C3B400BB5621 /* SwiftUI.framework in Frameworks */,
+				02A299F329A6C3DE00BB5621 /* CounterUI in Frameworks */,
+				02A299DF29A6C3B400BB5621 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0211258D24A22E3200B9F144 = {
 			isa = PBXGroup;
 			children = (
+				02A299EE29A6C3B600BB5621 /* CounterWidgetExtension.entitlements */,
 				02A299D529A6B5CD00BB5621 /* CounterUI */,
 				02A299D329A6B48700BB5621 /* CounterCore */,
-				0211259224A22E3200B9F144 /* Shared */,
 				0211259C24A22E3300B9F144 /* CounterApp */,
+				02A299E129A6C3B500BB5621 /* CounterWidget */,
 				02441C6E24A2350900C9C961 /* Frameworks */,
 				0211259B24A22E3300B9F144 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		0211259224A22E3200B9F144 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				0211259324A22E3200B9F144 /* CounterApp.swift */,
-				02EAF32A24A22EE400221975 /* CounterView.swift */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		0211259B24A22E3300B9F144 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				0211259A24A22E3300B9F144 /* Counter.app */,
+				02A299DE29A6C3B400BB5621 /* CounterWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +114,8 @@
 		0211259C24A22E3300B9F144 /* CounterApp */ = {
 			isa = PBXGroup;
 			children = (
+				0211259324A22E3200B9F144 /* CounterApp.swift */,
+				02EAF32A24A22EE400221975 /* CounterView.swift */,
 				0211259524A22E3300B9F144 /* Assets.xcassets */,
 				02441CA224A23D5D00C9C961 /* Counter.entitlements */,
 				0211259D24A22E3300B9F144 /* Info.plist */,
@@ -99,6 +130,18 @@
 				02441C7124A2350900C9C961 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02A299E129A6C3B500BB5621 /* CounterWidget */ = {
+			isa = PBXGroup;
+			children = (
+				02A299E229A6C3B500BB5621 /* CounterWidgetBundle.swift */,
+				02A299E429A6C3B500BB5621 /* CounterWidgetLiveActivity.swift */,
+				02A299E629A6C3B500BB5621 /* CounterWidget.swift */,
+				02A299E829A6C3B600BB5621 /* Assets.xcassets */,
+				02A299EA29A6C3B600BB5621 /* Info.plist */,
+			);
+			path = CounterWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,6 +159,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				02A299EC29A6C3B600BB5621 /* PBXTargetDependency */,
 			);
 			name = CounterApp;
 			packageProductDependencies = (
@@ -126,17 +170,40 @@
 			productReference = 0211259A24A22E3300B9F144 /* Counter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		02A299DD29A6C3B400BB5621 /* CounterWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02A299EF29A6C3B600BB5621 /* Build configuration list for PBXNativeTarget "CounterWidgetExtension" */;
+			buildPhases = (
+				02A299DA29A6C3B400BB5621 /* Sources */,
+				02A299DB29A6C3B400BB5621 /* Frameworks */,
+				02A299DC29A6C3B400BB5621 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CounterWidgetExtension;
+			packageProductDependencies = (
+				02A299F229A6C3DE00BB5621 /* CounterUI */,
+			);
+			productName = CounterWidgetExtension;
+			productReference = 02A299DE29A6C3B400BB5621 /* CounterWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0211258E24A22E3200B9F144 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					0211259924A22E3300B9F144 = {
 						CreatedOnToolsVersion = 12.0;
+					};
+					02A299DD29A6C3B400BB5621 = {
+						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
@@ -154,6 +221,7 @@
 			projectRoot = "";
 			targets = (
 				0211259924A22E3300B9F144 /* CounterApp */,
+				02A299DD29A6C3B400BB5621 /* CounterWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +232,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				021125AA24A22E3300B9F144 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02A299DC29A6C3B400BB5621 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A299E929A6C3B600BB5621 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +255,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02A299DA29A6C3B400BB5621 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A299E329A6C3B500BB5621 /* CounterWidgetBundle.swift in Sources */,
+				02A299E729A6C3B500BB5621 /* CounterWidget.swift in Sources */,
+				02A299E529A6C3B500BB5621 /* CounterWidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02A299EC29A6C3B600BB5621 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02A299DD29A6C3B400BB5621 /* CounterWidgetExtension */;
+			targetProxy = 02A299EB29A6C3B600BB5621 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		021125AC24A22E3300B9F144 /* Debug */ = {
@@ -352,6 +446,71 @@
 			};
 			name = Release;
 		};
+		02A299F029A6C3B600BB5621 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = CounterWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24MP8L55BY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CounterWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CounterWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.bonney.Counter.CounterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02A299F129A6C3B600BB5621 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = CounterWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24MP8L55BY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CounterWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CounterWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.bonney.Counter.CounterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -373,6 +532,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		02A299EF29A6C3B600BB5621 /* Build configuration list for PBXNativeTarget "CounterWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02A299F029A6C3B600BB5621 /* Debug */,
+				02A299F129A6C3B600BB5621 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -381,6 +549,10 @@
 			productName = CounterCore;
 		};
 		02A299D829A6B91400BB5621 /* CounterUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CounterUI;
+		};
+		02A299F229A6C3DE00BB5621 /* CounterUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CounterUI;
 		};
